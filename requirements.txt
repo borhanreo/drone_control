@@ -1,0 +1,7 @@
+RPi.GPIO
+Adafruit_PCA9685
+flask
+flask_socketio
+serial
+droneapi
+dronekit
