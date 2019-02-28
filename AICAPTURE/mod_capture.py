@@ -1,7 +1,4 @@
 import os
-import io
-from picamera.array import PiRGBArray
-from picamera import PiCamera
 import time
 import cv2
 from AWS.face import Face

@@ -33,8 +33,7 @@ class RcControllerClass:
 
     @staticmethod
     def send_rc_command(rc_0, rc_1, rc_2, rc_3, rc_4, rc_5, rc_6, rc_7):
-        #print("New Line")
-        print ("RC 8",rc_0,rc_1,rc_2,rc_3,rc_4)
+        print ("RC ",rc_2)
         pwm.set_pwm(0, 0, int(rc_0))
         pwm.set_pwm(1, 0, int(rc_1))
         pwm.set_pwm(2, 0, int(rc_2))
@@ -45,16 +44,9 @@ class RcControllerClass:
         pwm.set_pwm(7, 0, int(rc_7))
 
     @staticmethod
-    def send_rc_command_last_4( rc_4, rc_5, rc_6, rc_7):
-        #print("New Line")
-        print ("RC ", rc_4, rc_5, rc_6, rc_6)
-        pwm.set_pwm(4, 0, int(rc_4))
-        pwm.set_pwm(5, 0, int(rc_5))
-        pwm.set_pwm(6, 0, int(rc_6))
-        pwm.set_pwm(7, 0, int(rc_7))
-    @staticmethod
     def send_rc_command_for_pin(pin, value):
-        print ("RC val RC Controller 1", pin, " ", value)
+        print (
+            "RC val RC Controller", pin, " ", value)
         pwm.set_pwm(pin, 0, int(value))
     @staticmethod
     def fly_up(time_limit=10):

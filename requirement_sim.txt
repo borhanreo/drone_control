@@ -1,0 +1,8 @@
+boto3
+opencv-python
+Pillow
+flask
+flask_socketio
+droneapi
+dronekit
+socketIO_client
